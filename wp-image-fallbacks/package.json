@@ -1,0 +1,22 @@
+{
+	"name": "wp-image-fallbacks",
+	"private": true,
+	"description": "What SEO plugins and WordPress core output when Modern Image Formats converts uploads to WebP or AVIF.",
+	"type": "module",
+	"scripts": {
+		"audit": "node scripts/run.ts",
+		"setup": "node scripts/run.ts setup",
+		"upload": "node scripts/run.ts upload",
+		"plugins": "node scripts/run.ts plugins",
+		"core": "node scripts/run.ts core",
+		"sizes": "node scripts/run.ts sizes",
+		"screenshots": "playwright install chromium && node scripts/screenshots.ts",
+		"down": "docker compose down -v"
+	},
+	"dependencies": {
+		"cheerio": "^1.2.0"
+	},
+	"devDependencies": {
+		"playwright": "^1.65.1"
+	}
+}

@@ -1,0 +1,19 @@
+WordPress 7.1.4
+PHP 8.3.37
+ImageMagick ImageMagick 7.1.2-35 Q16-HDRI aarch64 24992 https://imagemagick.org
+Editor for image/jpeg: WP_Image_Editor_GD
+Editor for image/png: WP_Image_Editor_GD
+Editor for image/webp: WP_Image_Editor_GD
+Editor for image/avif: WP_Image_Editor_GD
+name,version
+akismet,5.7.2
+all-in-one-seo-pack,5.0.5.1
+hello,1.7.2
+jetpack,16.4
+webp-uploads,2.7.1
+seo-by-rank-math,1.0.282
+wp-seopress,10.4
+slim-seo,4.11.6
+autodescription,5.2.1
+wordpress-seo,28.9
+audit,

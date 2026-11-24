@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Image Format Share Test</title>
+<meta name="description" content="Share a link whose preview image is JPEG, PNG, WebP or AVIF and see which apps show it.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>Which apps show WebP and AVIF in link previews?</h1>
+<p class="muted">Each link below is a page whose <code>og:image</code> and <code>twitter:image</code> is a different format. Share it in an app and see if the preview shows the image. Part of <a href="https://github.com/WordPress/performance/issues/2760">WordPress/performance#2760</a>. Source and full results: <a href="https://github.com/b1ink0/research-lab/tree/main/link-preview-formats">github.com/b1ink0/research-lab</a>.</p>
+
+<h2>Test pages</h2>
+<ul class="links">
+	<li><a href="t/jpg/">JPEG</a><button type="button" data-path="t/jpg/">Copy link</button></li>
+	<li><a href="t/png/">PNG</a><button type="button" data-path="t/png/">Copy link</button></li>
+	<li><a href="t/webp/">WebP</a><button type="button" data-path="t/webp/">Copy link</button></li>
+	<li><a href="t/avif/">AVIF</a><button type="button" data-path="t/avif/">Copy link</button></li>
+	<li><a href="t/png-transparent/">Transparent PNG</a><button type="button" data-path="t/png-transparent/">Copy link</button></li>
+	<li><a href="t/webp-transparent/">Transparent WebP</a><button type="button" data-path="t/webp-transparent/">Copy link</button></li>
+	<li><a href="t/avif-transparent/">Transparent AVIF</a><button type="button" data-path="t/avif-transparent/">Copy link</button></li>
+</ul>
+<p class="muted">Each image is 1200x630, a yellow circle with the format name. The transparent ones have no background, so a correct preview shows the app's own background around the circle. The <a href="email/">email page</a> shows all seven on a red background, to send as an HTML email.</p>
+<p class="muted">Apps cache previews by URL. Add something new like <code>?v=2</code> to the page link to make the app read the page again. The image URL stays the same, so the app may still reuse an image it already fetched. For a fully fresh test, run <code>npm run serve -w link-preview-formats</code> from the repository behind a tunnel, which adds the same value to the image URL too.</p>
+
+<h2>Results from 2026-11-23</h2>
+<div class="table">
+<table>
+	<thead><tr><th>App</th><th>JPEG</th><th>PNG</th><th>WebP</th><th>AVIF</th><th>Transparent PNG</th><th>Transparent WebP</th><th>Transparent AVIF</th></tr></thead>
+	<tbody>
+		<tr><td>Facebook</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅ kept</td><td>✅ kept</td><td>✅ kept</td></tr>
+		<tr><td>WhatsApp</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>⚠️ white fill</td><td>⚠️ white fill</td><td>⚠️ white fill</td></tr>
+		<tr><td>Signal</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>⚠️ black fill</td><td>⚠️ black fill</td><td>⚠️ black fill</td></tr>
+		<tr><td>Threads</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅ kept</td><td>✅ kept</td><td>✅ kept</td></tr>
+		<tr><td>Reddit</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅ kept</td><td>✅ kept</td><td>✅ kept</td></tr>
+		<tr><td>Google Messages (RCS)</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅ kept</td><td>✅ kept</td><td>✅ kept</td></tr>
+		<tr><td>Discord</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅ kept</td><td>✅ kept</td><td>✅ kept</td></tr>
+		<tr><td>Telegram</td><td>✅</td><td>✅</td><td>✅</td><td>❌</td><td>⚠️ white fill</td><td>⚠️ white fill</td><td>❌</td></tr>
+		<tr><td>Slack</td><td>✅</td><td>✅</td><td>✅</td><td>❌</td><td>✅ kept</td><td>✅ kept</td><td>❌</td></tr>
+		<tr><td>LinkedIn</td><td>✅</td><td>✅</td><td>✅</td><td>❌</td><td>❓ gray</td><td>❓ gray</td><td>❌</td></tr>
+		<tr><td>Bluesky</td><td>✅</td><td>✅</td><td>✅</td><td>❌</td><td>⚠️ black fill</td><td>⚠️ black fill</td><td>❌</td></tr>
+		<tr><td>iMessage</td><td>✅</td><td>✅</td><td>✅</td><td>❌</td><td>✅ kept</td><td>✅ kept</td><td>❌</td></tr>
+		<tr><td>X</td><td>✅</td><td>✅</td><td>✅</td><td>❌</td><td>✅ kept</td><td>⚠️ white fill</td><td>❌</td></tr>
+		<tr><td>Gmail (email)</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅ kept</td><td>⚠️ black fill</td><td>✅ kept</td></tr>
+		<tr><td>Outlook (email)</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅ kept</td><td>✅ kept</td><td>✅ kept</td></tr>
+	</tbody>
+</table>
+</div>
+<p class="muted">✅ the image was shown. ❌ no image was shown. <b>kept</b>: the transparent area matches the card around it. <b>white fill</b> or <b>black fill</b>: the app flattened the image onto that color. <b>❓ gray</b>: LinkedIn shows it on a gray tile, which may be its thumbnail frame or a flattened background. Phones were Android, plus an iPhone for iMessage. Gmail and Outlook were the Android apps.</p>
+<p class="muted">Tested something not listed here, such as Pinterest, Mastodon, Teams or classic Outlook for Windows? Please add a comment on the <a href="https://github.com/WordPress/performance/issues/2760">issue</a>.</p>
+</main>
+<script>
+document.querySelectorAll( 'button[data-path]' ).forEach( ( button ) => {
+	button.addEventListener( 'click', async () => {
+		const url = new URL( button.dataset.path, location.href ).href;
+		try {
+			await navigator.clipboard.writeText( url );
+			button.textContent = 'Copied';
+		} catch {
+			button.textContent = url;
+		}
+	} );
+} );
+</script>
+</body>
+</html>

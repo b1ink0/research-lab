@@ -1,0 +1,10 @@
+name: link-preview-formats
+
+services:
+  # PHP GD of this image made the tested share images, so it is pinned to make the same bytes.
+  gd:
+    image: wordpress:php8.3-apache@sha256:1f59452d2ceed177ad383d17b3a6a7a5c8225d89e34adb36880af8603ac244c2
+    entrypoint: ["php"]
+    volumes:
+      - ./scripts:/scripts:ro
+      - ./site/img:/img

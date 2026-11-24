@@ -1,0 +1,25 @@
+setting	upload	rest source_url	oembed thumbnail_url	page img src	feed img src
+webp-fb0	leaves.jpg	webp-fb0-leaves.webp	webp-fb0-leaves-768x512.webp	webp-fb0-leaves.webp webp-fb0-leaves-1024x683.webp	webp-fb0-leaves-1024x683.webp
+webp-fb0	dice.png	webp-fb0-dice.webp	webp-fb0-dice.webp	webp-fb0-dice.webp webp-fb0-dice.webp	webp-fb0-dice.webp
+webp-fb0	balloons.webp	webp-fb0-balloons.webp	webp-fb0-balloons-683x1024.webp	webp-fb0-balloons.webp webp-fb0-balloons-683x1024.webp	webp-fb0-balloons-683x1024.webp
+webp-fb0	dice-alpha.webp	webp-fb0-dice-alpha.webp	webp-fb0-dice-alpha.webp	webp-fb0-dice-alpha.webp webp-fb0-dice-alpha.webp	webp-fb0-dice-alpha.webp
+webp-fb0	leaves.avif	webp-fb0-leaves.avif	webp-fb0-leaves-768x512.avif	webp-fb0-leaves.avif webp-fb0-leaves-1024x683.avif	webp-fb0-leaves-1024x683.avif
+webp-fb0	dice.avif	webp-fb0-dice.avif	webp-fb0-dice.avif	webp-fb0-dice.avif webp-fb0-dice.avif	webp-fb0-dice.avif
+webp-fb1	leaves.jpg	webp-fb1-leaves.jpg	webp-fb1-leaves-768x512.jpg	webp-fb1-leaves-jpg.webp webp-fb1-leaves-1024x683-jpg.webp	webp-fb1-leaves-1024x683.jpg
+webp-fb1	dice.png	webp-fb1-dice.png	webp-fb1-dice.png	webp-fb1-dice-png.webp webp-fb1-dice-png.webp	webp-fb1-dice.png
+webp-fb1	balloons.webp	webp-fb1-balloons.webp	webp-fb1-balloons-683x1024.webp	webp-fb1-balloons.webp webp-fb1-balloons-683x1024.webp	webp-fb1-balloons-683x1024.webp
+webp-fb1	dice-alpha.webp	webp-fb1-dice-alpha.webp	webp-fb1-dice-alpha.webp	webp-fb1-dice-alpha-webp.jpg webp-fb1-dice-alpha-webp.jpg	webp-fb1-dice-alpha.webp
+webp-fb1	leaves.avif	webp-fb1-leaves.avif	webp-fb1-leaves-768x512.avif	webp-fb1-leaves.avif webp-fb1-leaves-1024x683.avif	webp-fb1-leaves-1024x683.avif
+webp-fb1	dice.avif	webp-fb1-dice.avif	webp-fb1-dice.avif	webp-fb1-dice.avif webp-fb1-dice.avif	webp-fb1-dice.avif
+avif-fb0	leaves.jpg	avif-fb0-leaves.avif	avif-fb0-leaves-768x512.avif	avif-fb0-leaves.avif avif-fb0-leaves-1024x683.avif	avif-fb0-leaves-1024x683.avif
+avif-fb0	dice.png	avif-fb0-dice.avif	avif-fb0-dice.avif	avif-fb0-dice.avif avif-fb0-dice.avif	avif-fb0-dice.avif
+avif-fb0	balloons.webp	avif-fb0-balloons.avif	avif-fb0-balloons-683x1024.avif	avif-fb0-balloons.avif avif-fb0-balloons-683x1024.avif	avif-fb0-balloons-683x1024.avif
+avif-fb0	dice-alpha.webp	avif-fb0-dice-alpha.avif	avif-fb0-dice-alpha.avif	avif-fb0-dice-alpha.avif avif-fb0-dice-alpha.avif	avif-fb0-dice-alpha.avif
+avif-fb0	leaves.avif	avif-fb0-leaves-1.avif	avif-fb0-leaves-1-768x512.avif	avif-fb0-leaves-1.avif avif-fb0-leaves-1-1024x683.avif	avif-fb0-leaves-1-1024x683.avif
+avif-fb0	dice.avif	avif-fb0-dice-1.avif	avif-fb0-dice-1.avif	avif-fb0-dice-1.avif avif-fb0-dice-1.avif	avif-fb0-dice-1.avif
+avif-fb1	leaves.jpg	avif-fb1-leaves.jpg	avif-fb1-leaves-768x512.jpg	avif-fb1-leaves-jpg.avif avif-fb1-leaves-1024x683.jpg	avif-fb1-leaves-1024x683.jpg
+avif-fb1	dice.png	avif-fb1-dice.png	avif-fb1-dice.png	avif-fb1-dice-png.avif avif-fb1-dice-png.avif	avif-fb1-dice.png
+avif-fb1	balloons.webp	avif-fb1-balloons.webp	avif-fb1-balloons-683x1024.webp	avif-fb1-balloons.webp avif-fb1-balloons-683x1024.webp	avif-fb1-balloons-683x1024.webp
+avif-fb1	dice-alpha.webp	avif-fb1-dice-alpha.webp	avif-fb1-dice-alpha.webp	avif-fb1-dice-alpha.webp avif-fb1-dice-alpha.webp	avif-fb1-dice-alpha.webp
+avif-fb1	leaves.avif	avif-fb1-leaves.avif	avif-fb1-leaves-768x512.avif	avif-fb1-leaves.avif avif-fb1-leaves-1024x683-avif.jpg	avif-fb1-leaves-1024x683.avif
+avif-fb1	dice.avif	avif-fb1-dice.avif	avif-fb1-dice.avif	avif-fb1-dice.avif avif-fb1-dice.avif	avif-fb1-dice.avif

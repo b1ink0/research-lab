@@ -1,0 +1,12 @@
+{
+	"name": "link-preview-formats",
+	"private": true,
+	"description": "Which apps show JPEG, PNG, WebP and AVIF images in link previews and emails.",
+	"homepage": "https://b1ink0.github.io/research-lab/link-preview-formats/site",
+	"type": "module",
+	"scripts": {
+		"pages": "node scripts/pages.ts",
+		"images": "node scripts/images.ts",
+		"serve": "node scripts/server.ts"
+	}
+}

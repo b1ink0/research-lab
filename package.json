@@ -1,0 +1,22 @@
+{
+	"name": "research-lab",
+	"private": true,
+	"description": "Reproducible experiments, one folder per experiment.",
+	"license": "MIT",
+	"repository": "github:b1ink0/research-lab",
+	"type": "module",
+	"engines": {
+		"node": ">=22.18"
+	},
+	"workspaces": [
+		"link-preview-formats",
+		"wp-image-fallbacks"
+	],
+	"scripts": {
+		"typecheck": "tsc"
+	},
+	"devDependencies": {
+		"@types/node": "^24.19.2",
+		"typescript": "^7.0.2"
+	}
+}
