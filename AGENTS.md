@@ -4,7 +4,7 @@ Reproducible experiments. See [README.md](README.md) for the list.
 
 ## Layout
 
-- Each top-level folder is one experiment and one npm workspace, with its own `package.json`, `README.md`, `scripts/` and `results/`. A new experiment is a new folder added to `workspaces` in the root `package.json`.
+- Each top-level folder is one experiment and one npm workspace, with its own `package.json`, `README.md`, `scripts/` and `results/`. A new experiment is a new folder added to `workspaces` in the root `package.json`, to the table in `README.md` and to the root `index.html`.
 - An experiment with a site keeps it in `site/`. GitHub Pages serves the repository root (`.nojekyll` is at the root), so the site is at `https://b1ink0.github.io/research-lab/<experiment>/site/`.
 - An experiment that needs Docker has its own `compose.yml` with its own project name.
 - `notes/` holds local drafts. Git-ignored.

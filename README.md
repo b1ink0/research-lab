@@ -17,7 +17,7 @@ npm install
 
 Each experiment is an npm workspace. Run its scripts from the root with `npm run <script> -w <experiment>`, as listed in its README.
 
-GitHub Pages serves the repository root, so an experiment's site is at `https://b1ink0.github.io/research-lab/<experiment>/site/`.
+GitHub Pages serves the repository root, so an experiment's site is at `https://b1ink0.github.io/research-lab/<experiment>/site/`. The root [`index.html`](index.html) links to every experiment at https://b1ink0.github.io/research-lab/.
 
 ## License
 

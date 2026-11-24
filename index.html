@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research lab</title>
+<meta name="description" content="Reproducible experiments, one folder per experiment.">
+<style>
+:root {
+	--bg: #ffffff;
+	--fg: #1d2327;
+	--muted: #50575e;
+	--accent: #2271b1;
+	color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: #16191d;
+		--fg: #e8eaed;
+		--muted: #a7aaad;
+		--accent: #72aee6;
+	}
+}
+
+body {
+	margin: 0;
+	background: var(--bg);
+	color: var(--fg);
+	font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+main {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 24px 16px 48px;
+}
+
+a {
+	color: var(--accent);
+}
+
+.muted {
+	color: var(--muted);
+}
+</style>
+</head>
+<body>
+<main>
+<h1>Research lab</h1>
+<p class="muted">Reproducible experiments. Source, data and how to run each one: <a href="https://github.com/b1ink0/research-lab">github.com/b1ink0/research-lab</a>.</p>
+
+<h2>Link preview formats</h2>
+<p>Which apps show JPEG, PNG, WebP and AVIF images in link previews and emails.</p>
+<p><a href="link-preview-formats/site/">Test site</a> · <a href="https://github.com/b1ink0/research-lab/tree/main/link-preview-formats">Source and results</a></p>
+
+<h2>WordPress image fallbacks</h2>
+<p>What SEO plugins and WordPress core output when Modern Image Formats converts uploads to WebP or AVIF.</p>
+<p><a href="https://github.com/b1ink0/research-lab/tree/main/wp-image-fallbacks">Source and results</a></p>
+</main>
+</body>
+</html>
